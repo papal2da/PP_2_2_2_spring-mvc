@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import web.service.CarService;
@@ -29,8 +30,11 @@ public class CarsController {
         } else {
             model.addAttribute("cars", carService.getListOfCars(Integer.parseInt(count)));
         }
-
-
         return "carsView/cars";
     }
+//    @GetMapping("/cars/{id}")
+//    public String showCar(@PathVariable ("id") int id, Model model ) {
+//return "  "
+//    }
+
 }

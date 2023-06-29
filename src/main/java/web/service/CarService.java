@@ -11,10 +11,10 @@ public class CarService {
     private List<Car> cars;
     {
         cars = new ArrayList<>();
-        cars.add(new Car(1, "greenKefteme", "AudiA6"));
-        cars.add(new Car(2, "pinkCloud", "BMWX5"));
-        cars.add(new Car(3, "blueSea", "ChetyrkaBystraya"));
-        cars.add(new Car(4, "redAlert", "UAZik"));
+        cars.add(new Car(1, "Green", "AudiA6"));
+        cars.add(new Car(2, "pink", "BMWX5"));
+        cars.add(new Car(3, "blue", "VAZ2107"));
+        cars.add(new Car(4, "red", "UAZik"));
         cars.add(new Car(5, "bakLazhan", "VAZ2106"));
     }
     public int getCarCount() {
